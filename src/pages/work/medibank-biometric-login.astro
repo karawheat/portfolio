@@ -1,0 +1,176 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Medibank — Biometric Login | Kara Wheat">
+  <main>
+    <!-- Back nav -->
+    <div class="max-w-5xl mx-auto px-6 pt-12">
+      <a href="/work" class="font-['Inter'] font-light text-[16px] text-black/60 hover:text-black transition-colors">
+        ← Back
+      </a>
+    </div>
+
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto px-6 pt-12 pb-16">
+      <p class="font-['Inter'] font-light text-[14px] uppercase tracking-widest text-black/50 mb-4">
+        Medibank — App Security
+      </p>
+      <h1 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
+        Getting members to trust biometric login
+      </h1>
+      <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl">
+        When Medibank introduced Multi-Factor Authentication, members who logged in manually
+        faced SMS verification on every login. Members using biometrics only faced it
+        periodically. That gap was the opportunity — and the question was whether a single
+        prompt, shown at the right moment, could get people to take it.
+      </p>
+    </section>
+
+    <!-- Placeholder image -->
+    <section class="max-w-5xl mx-auto px-6 mb-24">
+      <div class="w-full aspect-video bg-black/5 border border-black/10 flex items-center justify-center">
+        <p class="font-['Inter'] font-light text-[14px] text-black/40">
+          [Image: biometric-login-prompt-hero.png]
+        </p>
+      </div>
+    </section>
+
+    <!-- The Dilemma -->
+    <section class="w-full py-24" style="background-color: #FFF8E1;">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
+          The Dilemma
+        </h2>
+        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl">
+          MFA made accounts safer, but it introduced real friction. Every manual login now
+          meant waiting for a code, switching apps, and typing it back in. Biometric login
+          removed that friction almost entirely — but nobody was choosing it. Members needed
+          a reason to opt in, and it needed to appear at the exact moment the benefit was
+          obvious: right after they'd just felt that friction.
+        </p>
+        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl mt-6">
+          The team's assumption was straightforward: a well-timed prompt after MFA login would
+          lift biometric adoption. My job was to find out whether that assumption held up in
+          practice, and if it didn't, why.
+        </p>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="max-w-5xl mx-auto px-6 py-24">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
+        The Approach
+      </h2>
+      <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl mb-12">
+        Rather than just asking members if they'd enable biometrics, I wanted to watch what
+        they actually did when placed in realistic, goal-driven scenarios — checking their
+        digital card, finding a dentist, logging in while distracted. Moderated interviews
+        against a Figma prototype, recruited through Askable, split evenly across age and
+        gender. Existing Medibank app users only.
+      </p>
+
+      <div class="max-w-3xl">
+        <h3 class="font-['Inter'] font-normal text-[16px] uppercase tracking-widest text-black/50 mb-6">
+          What we set out to test
+        </h3>
+        <ul class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 space-y-2 mb-12">
+          <li>Would members in a hurry defer the prompt and close it?</li>
+          <li>Would they understand how to dismiss it?</li>
+          <li>Would they understand what checking "don't show again" actually meant?</li>
+          <li>Did members understand what biometrics were, and what enabling them changed?</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Findings -->
+    <section class="max-w-5xl mx-auto px-6 pb-24">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
+        What We Learned
+      </h2>
+
+      <div class="max-w-3xl space-y-12">
+        <div>
+          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">Timing wasn't enough on its own</h3>
+          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
+            Every participant described frequent, goal-oriented use of the app — checking
+            Live Better points, finding a dentist, pulling up a digital card. Placed in that
+            mindset, every single one closed the prompt immediately. The moment was right,
+            but a one-off nudge wasn't going to compete with someone's actual task.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">"Close" wasn't the right word</h3>
+          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
+            Everyone could find the exit — the X icon and the "Close" button were both spotted
+            instantly. But several participants expected softer, more deferential language:
+            "Skip" or "Not now." "Close" worked functionally but read as more final than most
+            people meant it to be.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">The opt-out checkbox was ambiguous</h3>
+          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
+            Most participants read "don't show this again" correctly as a permanent opt-out.
+            Two didn't — they read it as confirmation they wanted to proceed, treating it as
+            part of setup rather than a way out. Both suggested the same fix independently:
+            wording closer to "No thanks" or "I'll pass."
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">Members weren't one audience — they were three</h3>
+          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
+            Biometrics-positive members already used Face ID or Touch ID everywhere and saw
+            the upside immediately. Security-first members understood biometrics fully but
+            were wary of irreversibility and breaches — MFA felt "good enough" to them.
+            Biometrics-skeptical members had been burned by unreliable Face ID or Touch ID
+            elsewhere and assumed it would be slower, not faster. One prompt couldn't speak
+            to all three the same way.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">The real benefit wasn't landing</h3>
+          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
+            Members agreed MFA was necessary but frustrating, and that removing repeated SMS
+            checks was appealing. But several weren't sure that enabling biometrics was what
+            actually reduced it — the connection between "turn this on" and "fewer SMS codes"
+            needed to be stated, not implied.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Result -->
+    <section class="w-full py-24" style="background-color: #FFF8E1;">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
+          The Result
+        </h2>
+        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl mb-6">
+          The research reshaped the prompt before it shipped: dismissal language changed from
+          "Close" to softer, lower-commitment wording; the opt-out checkbox copy was rewritten
+          to remove the ambiguity that tripped up a fifth of participants; and the benefit
+          statement was made explicit — enabling biometrics was tied directly to fewer SMS
+          checks, not left for members to infer.
+        </p>
+        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl">
+          On Android, the share of logins using biometrics rose from 56.3% to 61.3% over the
+          tracked period — a 4% lift on the previous ten-week high. The trend dipped briefly
+          mid-period, but that was traced to an unrelated MFA login bug rather than the
+          prompt itself, and adoption recovered once it was resolved.
+        </p>
+        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl mt-6">
+          The prompt's own interaction data backed this up directly: most members who engaged
+          with it chose "go to settings" over "don't show this again," by a margin of roughly
+          two to one. That interaction spike lined up closely with a jump in the app's device
+          authentication toggle — enable actions on the settings page rose from 18.5% to a
+          peak of 40.8% of settings interactions in the weeks the prompt was live.
+        </p>
+      </div>
+    </section>
+  </main>
+</Layout>
