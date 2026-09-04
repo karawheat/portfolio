@@ -1,0 +1,263 @@
+---
+import '../../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Eclipx Group — Optimising the Novated Lease Experience · Kara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-neutral-900 antialiased">
+
+    <!-- NAV -->
+    <nav class="max-w-[1176px] mx-auto px-8 pt-10 pb-4">
+      <a href="/work" class="text-xs font-medium tracking-[0.2em] uppercase text-neutral-500 hover:text-neutral-900 transition-colors">
+        ← Back
+      </a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="max-w-[1176px] mx-auto px-8 pt-16 pb-20">
+      <h1 class="font-['Instrument_Serif'] text-[64px] leading-[1.05] tracking-tight text-black mb-10" style="max-width: 1080px;">
+        Eclipx Group —<br />
+        <em class="italic">Optimising the Novated Lease Experience</em>
+      </h1>
+      <div class="flex flex-wrap gap-x-16 gap-y-4 text-neutral-900">
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Case Study</span>
+          <span class="block text-sm text-neutral-900">2021</span>
+        </div>
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Role</span>
+          <span class="block text-sm text-neutral-900">UX/UI Designer</span>
+        </div>
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Brand</span>
+          <span class="block text-sm text-neutral-900">Eclipx Group</span>
+        </div>
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Platforms</span>
+          <span class="block text-sm text-neutral-900">iOS &amp; Desktop Web</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO IMAGE — full bleed -->
+    <figure class="w-full mb-20">
+      <img
+        src="/case-studies/eclipx-novated-lease/eclipx-novated-lease-hero.png"
+        alt="Eclipx Novated Lease dashboard, shown on desktop and mobile"
+        class="w-full h-auto"
+      />
+    </figure>
+
+    <!-- OUTCOME -->
+    <section class="max-w-[1176px] mx-auto px-8 mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">Outcome</h2>
+      <p class="text-[16px] font-light leading-[36px] text-black max-w-[800px] mb-0">Designed the end-to-end customer journey map and the settlement flow for vehicle leasing, across iOS and desktop web, as part of Eclipx's move from a mainly manual lease process to a fully digitised one. Designs were refined iteratively against customer prototype testing and handed over to developers following an initial tech review.</p>
+    </section>
+
+    <!-- THE DILEMMA -->
+    <div class="w-full mb-20" style="background: #F3F0EC; padding: 80px 0;">
+      <div class="max-w-[1176px] mx-auto px-8">
+        <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">The dilemma</h2>
+        <div class="text-[16px] font-light leading-[36px] text-black max-w-[800px]">
+          <p>Eclipx's novated lease experience was mainly manual, spanning quoting, approval, vehicle ordering, delivery, in-lease management, and end-of-lease. The business wanted to digitise the entire process across iOS and desktop web — but a rebuild that big needed a shared map of the whole journey before any single flow could be designed with confidence.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUSTOMER JOURNEY MAP -->
+    <section class="max-w-[1176px] mx-auto px-8 mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">Customer journey map</h2>
+      <div class="text-[16px] font-light leading-[36px] text-black max-w-[800px] mb-8">
+        <p class="mb-0">Using existing customer interview insights, I developed a detailed end-to-end customer journey map for vehicle leasing, covering the phases customers moved through:</p>
+      </div>
+      <ul class="text-[16px] font-light leading-[36px] text-black max-w-[800px] space-y-1 list-disc pl-5 mb-8">
+        <li>Research &amp; Learn</li>
+        <li>Search for Loan Options</li>
+        <li>Obtain a Quote &amp; Approval</li>
+        <li>Order and Delivery of Vehicle</li>
+        <li>In-Lease Management</li>
+        <li>End of Lease Management</li>
+      </ul>
+      <p class="text-[16px] font-light leading-[36px] text-black max-w-[800px] mb-10">Service management was scoped separately and tackled at a later date. This map became the foundation for the migration strategy from manual to digital, used to pinpoint and resolve pain points, and to design in the moments most likely to lift customer satisfaction, loyalty, and retention.</p>
+      <button
+        type="button"
+        id="journey-map-trigger"
+        class="block w-full cursor-zoom-in group relative"
+        aria-label="Open customer journey map in full size"
+      >
+        <img
+          src="/case-studies/eclipx-novated-lease/eclipx-novated-lease-journey-map.jpg"
+          alt="Eclipx novated lease end-to-end customer journey map"
+          class="w-full h-auto shadow-md"
+        />
+        <span class="absolute bottom-4 right-4 bg-black/70 text-white text-xs font-medium tracking-[0.2em] uppercase px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          Click to zoom
+        </span>
+      </button>
+      <p class="text-xs font-medium text-neutral-400 tracking-[0.2em] uppercase mt-3">Note: click the map to view it in detail.</p>
+    </section>
+
+    <!-- JOURNEY MAP LIGHTBOX -->
+    <div
+      id="journey-map-lightbox"
+      class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center p-6"
+    >
+      <button
+        type="button"
+        id="journey-map-close"
+        aria-label="Close"
+        class="absolute top-6 right-6 text-white text-xs font-medium tracking-[0.2em] uppercase border border-white/40 px-4 py-2 hover:bg-white hover:text-black transition-colors"
+      >
+        Close ✕
+      </button>
+      <div id="journey-map-scroll" class="w-full h-full overflow-auto cursor-grab select-none">
+        <img
+          src="/case-studies/eclipx-novated-lease/eclipx-novated-lease-journey-map.jpg"
+          alt="Eclipx novated lease end-to-end customer journey map, enlarged"
+          class="max-w-none w-[1800px] mx-auto my-auto pointer-events-none"
+          draggable="false"
+        />
+      </div>
+    </div>
+
+    <!-- SETTLEMENT FLOW -->
+    <section class="max-w-[1176px] mx-auto px-8 mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">Settlement flow — order and delivery of vehicle</h2>
+      <p class="text-[16px] font-light leading-[36px] text-black max-w-[800px] mb-12">The journey map's insights guided my design of the settlement flow across iOS and desktop. I iteratively refined both against feedback gathered during prototype testing with customers.</p>
+      <img
+        src="/case-studies/eclipx-novated-lease/eclipx-novated-lease-settlement-flow.png"
+        alt="Eclipx novated lease settlement flow — order acceptance through to car delivery"
+        class="w-full h-auto shadow-md mb-12"
+      />
+    </section>
+
+    <!-- PROTOTYPE -->
+    <section class="max-w-[1176px] mx-auto px-8 mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">Prototype</h2>
+      <div class="w-full flex justify-start">
+        <div class="flex flex-col gap-16 mt-6 w-full">
+          <div>
+            <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">Desktop</h3>
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              class="w-full h-auto shadow-md"
+            >
+              <source src="/case-studies/eclipx-novated-lease/eclipx-novated-lease-desktop-prototype.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div>
+            <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">Mobile</h3>
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              class="w-full h-auto shadow-md"
+            >
+              <source src="/case-studies/eclipx-novated-lease/eclipx-novated-lease-mobile-prototype.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USER TESTING — tinted full-bleed block -->
+    <div class="w-full mb-20" style="background: #F3F0EC; padding: 80px 0;">
+      <div class="max-w-[1176px] mx-auto px-8">
+        <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">User testing</h2>
+        <p class="text-[16px] font-light leading-[36px] text-black max-w-[800px] mb-8">Feedback from prototype testing with customers was tracked and actioned via a dedicated Trello board, keeping design iterations tied directly to what participants struggled with or asked for.</p>
+        <img
+          src="/case-studies/eclipx-novated-lease/eclipx-novated-lease-user-testing.png"
+          alt="Trello board tracking user testing feedback for the Eclipx novated lease settlement flow"
+          class="w-full h-auto shadow-md"
+        />
+      </div>
+    </div>
+
+    <!-- RESULT -->
+    <section class="max-w-[1176px] mx-auto px-8 mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">Result</h2>
+      <div class="text-[16px] font-light leading-[36px] text-black max-w-[800px]">
+        <p>Designs were handed over to developers after an initial tech review, ready to take the settlement flow from prototype into build.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="max-w-[1176px] mx-auto px-8 py-24 border-t border-neutral-200">
+      <a href="/work" class="text-xs font-medium tracking-[0.2em] uppercase text-neutral-500 hover:text-neutral-900 transition-colors">
+        ← Back to all work
+      </a>
+    </footer>
+
+    <script>
+      const trigger = document.getElementById('journey-map-trigger');
+      const lightbox = document.getElementById('journey-map-lightbox');
+      const closeBtn = document.getElementById('journey-map-close');
+      const scrollArea = document.getElementById('journey-map-scroll');
+
+      let isDragging = false;
+      let startX = 0;
+      let startY = 0;
+      let startScrollLeft = 0;
+      let startScrollTop = 0;
+
+      scrollArea?.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX;
+        startY = e.pageY;
+        startScrollLeft = scrollArea.scrollLeft;
+        startScrollTop = scrollArea.scrollTop;
+        scrollArea.classList.remove('cursor-grab');
+        scrollArea.classList.add('cursor-grabbing');
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging || !scrollArea) return;
+        e.preventDefault();
+        scrollArea.scrollLeft = startScrollLeft - (e.pageX - startX);
+        scrollArea.scrollTop = startScrollTop - (e.pageY - startY);
+      });
+
+      function stopDragging() {
+        isDragging = false;
+        scrollArea?.classList.remove('cursor-grabbing');
+        scrollArea?.classList.add('cursor-grab');
+      }
+
+      window.addEventListener('mouseup', stopDragging);
+
+      function openLightbox() {
+        lightbox?.classList.remove('hidden');
+        lightbox?.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox?.classList.add('hidden');
+        lightbox?.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      trigger?.addEventListener('click', openLightbox);
+      closeBtn?.addEventListener('click', closeLightbox);
+      lightbox?.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    </script>
+  </body>
+</html>

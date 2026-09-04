@@ -1,176 +1,278 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.css';
 ---
 
-<Layout title="Medibank — Biometric Login | Kara Wheat">
-  <main>
-    <!-- Back nav -->
-    <div class="max-w-5xl mx-auto px-6 pt-12">
-      <a href="/work" class="font-['Inter'] font-light text-[16px] text-black/60 hover:text-black transition-colors">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Medibank — Biometric Login Prompt · Kara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-neutral-900 antialiased">
+
+    <!-- NAV -->
+    <nav class="max-w-[1176px] mx-auto px-8 pt-6 pb-2">
+      <a href="/work" class="text-xs font-medium tracking-[0.2em] uppercase text-neutral-500 hover:text-neutral-900 transition-colors">
         ← Back
       </a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="max-w-[1176px] mx-auto px-8 pt-8 pb-10">
+      <h1 class="font-['Instrument_Serif'] text-[64px] leading-[1.05] tracking-tight text-black mb-6" style="max-width: 1080px;">
+        Medibank —<br />
+        <em class="italic">Biometric Login Prompt</em>
+      </h1>
+      <div class="flex flex-wrap gap-x-16 gap-y-4 text-neutral-900">
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Case Study</span>
+          <span class="block text-sm text-neutral-900">2026</span>
+        </div>
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Role</span>
+          <span class="block text-sm text-neutral-900">UX Researcher</span>
+        </div>
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Brand</span>
+          <span class="block text-sm text-neutral-900">Medibank</span>
+        </div>
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Teams</span>
+          <span class="block text-sm text-neutral-900">UX, Product, Engineering, Security</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO IMAGE — full bleed, no tinted bg -->
+    <div class="w-full mb-10">
+      <img
+        src="/case-studies/medibank-biometric-login/medibank-biometric-login-hero-new.jpg"
+        alt="The Medibank biometric login prompt shown across three phone screens, with the app settings and enablement prompt"
+        class="w-full h-auto"
+      />
     </div>
 
-    <!-- Hero -->
-    <section class="max-w-5xl mx-auto px-6 pt-12 pb-16">
-      <p class="font-['Inter'] font-light text-[14px] uppercase tracking-widest text-black/50 mb-4">
-        Medibank — App Security
-      </p>
-      <h1 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
-        Getting members to trust biometric login
-      </h1>
-      <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl">
-        When Medibank introduced Multi-Factor Authentication, members who logged in manually
-        faced SMS verification on every login. Members using biometrics only faced it
-        periodically. That gap was the opportunity — and the question was whether a single
-        prompt, shown at the right moment, could get people to take it.
-      </p>
-    </section>
-
-    <!-- Placeholder image -->
-    <section class="max-w-5xl mx-auto px-6 mb-24">
-      <div class="w-full aspect-video bg-black/5 border border-black/10 flex items-center justify-center">
-        <p class="font-['Inter'] font-light text-[14px] text-black/40">
-          [Image: biometric-login-prompt-hero.png]
-        </p>
+    <!-- OUTCOME -->
+    <section class="max-w-[1176px] mx-auto px-8 mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">Outcome</h2>
+      <p class="text-[16px] font-light leading-[36px] text-black max-w-[800px] mb-16">I designed and led moderated UX research on My Medibank's biometric-enablement prompt: interviews against a Figma prototype, with participants recruited through Askable. The research reshaped the prompt's language and framing before it shipped. My suggestion to the team was to test the flow with members rather than ship, which could waste time and money. That research surfaced the specific wording and audience fixes that lifted biometric adoption once live.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[800px] mt-6 mb-16">
+        <div>
+          <p class="font-['Instrument_Serif'] text-5xl text-black mb-3">61.3%</p>
+          <p class="text-[16px] font-light leading-[32px] text-black">Share of Android logins using biometrics by period's end, up from 56.3%</p>
+        </div>
+        <div>
+          <p class="font-['Instrument_Serif'] text-5xl text-black mb-3">40.8%</p>
+          <p class="text-[16px] font-light leading-[32px] text-black">Peak share of settings interactions that were device-auth enables, up from 18.5%</p>
+        </div>
+        <div>
+          <p class="font-['Instrument_Serif'] text-5xl text-black mb-3">2:1</p>
+          <p class="text-[16px] font-light leading-[32px] text-black">Ratio choosing "go to settings" over "don't show this again" on the prompt</p>
+        </div>
       </div>
     </section>
 
-    <!-- The Dilemma -->
-    <section class="w-full py-24" style="background-color: #FFF8E1;">
-      <div class="max-w-5xl mx-auto px-6">
-        <h2 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
-          The Dilemma
-        </h2>
-        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl">
-          MFA made accounts safer, but it introduced real friction. Every manual login now
-          meant waiting for a code, switching apps, and typing it back in. Biometric login
-          removed that friction almost entirely — but nobody was choosing it. Members needed
-          a reason to opt in, and it needed to appear at the exact moment the benefit was
-          obvious: right after they'd just felt that friction.
-        </p>
-        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl mt-6">
-          The team's assumption was straightforward: a well-timed prompt after MFA login would
-          lift biometric adoption. My job was to find out whether that assumption held up in
-          practice, and if it didn't, why.
-        </p>
+    <!-- THE DILEMMA -->
+    <div class="w-full mb-20" style="background: #F3F0EC; padding: 80px 0;">
+      <div class="max-w-[1176px] mx-auto px-8">
+        <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">The dilemma</h2>
+        <div class="text-[16px] font-light leading-[36px] text-black max-w-[800px]">
+          <p class="mb-0">MFA made accounts safer, but it introduced real friction. Every manual login meant waiting for a code, switching apps, and typing it back in. Biometric login removed that friction almost entirely — but nobody was choosing it.</p>
+          <p>The team's assumption was straightforward: a well-timed prompt after MFA login would lift biometric adoption. My job was to find out whether that assumption held up in practice, and if it didn't, why.</p>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Approach -->
-    <section class="max-w-5xl mx-auto px-6 py-24">
-      <h2 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
-        The Approach
-      </h2>
-      <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl mb-12">
-        Rather than just asking members if they'd enable biometrics, I wanted to watch what
-        they actually did when placed in realistic, goal-driven scenarios — checking their
-        digital card, finding a dentist, logging in while distracted. Moderated interviews
-        against a Figma prototype, recruited through Askable, split evenly across age and
-        gender. Existing Medibank app users only.
-      </p>
-
-      <div class="max-w-3xl">
-        <h3 class="font-['Inter'] font-normal text-[16px] uppercase tracking-widest text-black/50 mb-6">
-          What we set out to test
-        </h3>
-        <ul class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 space-y-2 mb-12">
+    <!-- RESEARCH GOAL & METHOD -->
+    <section class="max-w-[1176px] mx-auto px-8 mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">Research goal &amp; method</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16 max-w-[800px] mt-6 mb-16">
+        <div>
+          <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-2">Hypothesis</h3>
+          <p class="text-[16px] font-light leading-[32px] text-black">A biometric enablement prompt, shown right after MFA login, would nudge members to turn on biometric verification and lift overall adoption in the app.</p>
+        </div>
+        <div>
+          <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-2">Method</h3>
+          <p class="text-[16px] font-light leading-[32px] text-black">Moderated interviews against a Figma prototype, recruited through Askable. Existing Medibank app users only, split evenly across age and gender.</p>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">What we set out to test</h3>
+        <ul class="text-[16px] font-light leading-[36px] text-black max-w-[800px] space-y-1 list-disc pl-5">
           <li>Would members in a hurry defer the prompt and close it?</li>
           <li>Would they understand how to dismiss it?</li>
           <li>Would they understand what checking "don't show again" actually meant?</li>
           <li>Did members understand what biometrics were, and what enabling them changed?</li>
         </ul>
+        <button
+          type="button"
+          id="synthesis-trigger"
+          class="block w-full cursor-zoom-in group relative mt-10"
+          aria-label="Open research synthesis board in full size"
+        >
+          <img
+            src="/case-studies/medibank-biometric-login/medibank-research-synthesis.jpg"
+            alt="Research synthesis board showing the hypothesis, testing method, test tasks, and participant affinity-mapping grid for the biometric prompt study"
+            class="w-full h-auto shadow-md"
+          />
+          <span class="absolute bottom-4 right-4 bg-black/70 text-white text-xs font-medium tracking-[0.2em] uppercase px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            Click to zoom
+          </span>
+        </button>
+        <p class="text-xs font-medium text-neutral-400 tracking-[0.2em] uppercase mt-3">Note: click the board to view it in detail.</p>
       </div>
     </section>
 
-    <!-- Findings -->
-    <section class="max-w-5xl mx-auto px-6 pb-24">
-      <h2 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
-        What We Learned
-      </h2>
+    <!-- RESEARCH SYNTHESIS LIGHTBOX -->
+    <div
+      id="synthesis-lightbox"
+      class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center p-6"
+    >
+      <button
+        type="button"
+        id="synthesis-close"
+        aria-label="Close"
+        class="absolute top-6 right-6 text-white text-xs font-medium tracking-[0.2em] uppercase border border-white/40 px-4 py-2 hover:bg-white hover:text-black transition-colors"
+      >
+        Close ✕
+      </button>
+      <div id="synthesis-scroll" class="w-full h-full overflow-auto cursor-grab select-none">
+        <img
+          src="/case-studies/medibank-biometric-login/medibank-research-synthesis.jpg"
+          alt="Research synthesis board showing the hypothesis, testing method, test tasks, and participant affinity-mapping grid for the biometric prompt study, enlarged"
+          class="max-w-none w-[2200px] mx-auto my-auto pointer-events-none"
+          draggable="false"
+        />
+      </div>
+    </div>
 
-      <div class="max-w-3xl space-y-12">
+    <!-- WHAT WE LEARNED -->
+    <section class="max-w-[1176px] mx-auto px-8 mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">What we learned</h2>
+      <div class="flex flex-col gap-16 max-w-[800px]">
         <div>
-          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">Timing wasn't enough on its own</h3>
-          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
-            Every participant described frequent, goal-oriented use of the app — checking
-            Live Better points, finding a dentist, pulling up a digital card. Placed in that
-            mindset, every single one closed the prompt immediately. The moment was right,
-            but a one-off nudge wasn't going to compete with someone's actual task.
-          </p>
+          <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-2">Timing wasn't enough on its own</h3>
+          <p class="text-[16px] font-light leading-[36px] text-black">Every participant described frequent, goal-oriented use of the app — checking Live Better points, finding a dentist, pulling up a digital card. Placed in that mindset, every single one closed the prompt immediately. The moment was right, but a one-off nudge wasn't going to compete with someone's actual task.</p>
         </div>
-
         <div>
-          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">"Close" wasn't the right word</h3>
-          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
-            Everyone could find the exit — the X icon and the "Close" button were both spotted
-            instantly. But several participants expected softer, more deferential language:
-            "Skip" or "Not now." "Close" worked functionally but read as more final than most
-            people meant it to be.
-          </p>
+          <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-2">"Close" wasn't the right word</h3>
+          <p class="text-[16px] font-light leading-[36px] text-black">Everyone could find the exit — the X icon and the "Close" button were both spotted instantly. But several participants expected softer, more deferential language: "Skip" or "Not now." "Close" worked functionally but read as more final than most people meant it to be.</p>
         </div>
-
         <div>
-          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">The opt-out checkbox was ambiguous</h3>
-          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
-            Most participants read "don't show this again" correctly as a permanent opt-out.
-            Two didn't — they read it as confirmation they wanted to proceed, treating it as
-            part of setup rather than a way out. Both suggested the same fix independently:
-            wording closer to "No thanks" or "I'll pass."
-          </p>
+          <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-2">The opt-out checkbox was ambiguous</h3>
+          <p class="text-[16px] font-light leading-[36px] text-black">Most participants read "don't show this again" correctly as a permanent opt-out. Two didn't — they read it as confirmation they wanted to proceed, treating it as part of setup rather than a way out. Both suggested the same fix independently: wording closer to "No thanks" or "I'll pass."</p>
         </div>
-
         <div>
-          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">Members weren't one audience — they were three</h3>
-          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
-            Biometrics-positive members already used Face ID or Touch ID everywhere and saw
-            the upside immediately. Security-first members understood biometrics fully but
-            were wary of irreversibility and breaches — MFA felt "good enough" to them.
-            Biometrics-skeptical members had been burned by unreliable Face ID or Touch ID
-            elsewhere and assumed it would be slower, not faster. One prompt couldn't speak
-            to all three the same way.
-          </p>
+          <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-2">Members weren't one audience — they were three</h3>
+          <p class="text-[16px] font-light leading-[36px] text-black">Biometrics-positive members already used Face ID or Touch ID everywhere and saw the upside immediately. Security-first members understood biometrics fully but were wary of irreversibility and breaches — MFA felt "good enough" to them. Biometrics-skeptical members had been burned by unreliable Face ID or Touch ID elsewhere and assumed it would be slower, not faster. One prompt couldn't speak to all three the same way.</p>
         </div>
-
         <div>
-          <h3 class="font-['Inter'] font-normal text-[16px] mb-3">The real benefit wasn't landing</h3>
-          <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80">
-            Members agreed MFA was necessary but frustrating, and that removing repeated SMS
-            checks was appealing. But several weren't sure that enabling biometrics was what
-            actually reduced it — the connection between "turn this on" and "fewer SMS codes"
-            needed to be stated, not implied.
-          </p>
+          <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-2">The real benefit wasn't landing</h3>
+          <p class="text-[16px] font-light leading-[36px] text-black">Members agreed MFA was necessary but frustrating, and that removing repeated SMS checks was appealing. But several weren't sure that enabling biometrics was what actually reduced it — the connection between "turn this on" and "fewer SMS codes" needed to be stated, not implied.</p>
         </div>
       </div>
     </section>
 
-    <!-- The Result -->
-    <section class="w-full py-24" style="background-color: #FFF8E1;">
-      <div class="max-w-5xl mx-auto px-6">
-        <h2 class="font-['Instrument_Serif'] text-[48px] leading-tight mb-8">
-          The Result
-        </h2>
-        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl mb-6">
-          The research reshaped the prompt before it shipped: dismissal language changed from
-          "Close" to softer, lower-commitment wording; the opt-out checkbox copy was rewritten
-          to remove the ambiguity that tripped up a fifth of participants; and the benefit
-          statement was made explicit — enabling biometrics was tied directly to fewer SMS
-          checks, not left for members to infer.
-        </p>
-        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl">
-          On Android, the share of logins using biometrics rose from 56.3% to 61.3% over the
-          tracked period — a 4% lift on the previous ten-week high. The trend dipped briefly
-          mid-period, but that was traced to an unrelated MFA login bug rather than the
-          prompt itself, and adoption recovered once it was resolved.
-        </p>
-        <p class="font-['Inter'] font-light text-[16px] leading-[36px] text-black/80 max-w-3xl mt-6">
-          The prompt's own interaction data backed this up directly: most members who engaged
-          with it chose "go to settings" over "don't show this again," by a margin of roughly
-          two to one. That interaction spike lined up closely with a jump in the app's device
-          authentication toggle — enable actions on the settings page rose from 18.5% to a
-          peak of 40.8% of settings interactions in the weeks the prompt was live.
-        </p>
+    <!-- TESTING PROTOTYPE -->
+    <section class="mb-20">
+      <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4 max-w-[1176px] mx-auto px-8">Testing prototype</h2>
+      <div class="w-full flex justify-start items-center max-w-[1176px] mx-auto px-8">
+        <div class="w-full max-w-[531px]" style="position: relative; height: 520px; overflow: hidden;">
+          <iframe
+            src="https://www.loom.com/embed/170a61f632144837977a964a6fb54d12?autoplay=1&muted=1&hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+            title="Medibank biometric login prompt prototype walkthrough"
+            frameborder="0"
+            allow="autoplay"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          ></iframe>
+        </div>
       </div>
     </section>
-  </main>
-</Layout>
+
+    <!-- THE RESULT -->
+    <div class="w-full mb-20" style="background: #F3F0EC; padding: 80px 0;">
+      <div class="max-w-[1176px] mx-auto px-8">
+        <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">The result</h2>
+        <div class="text-[16px] font-light leading-[36px] text-black max-w-[800px]">
+          <p class="mb-6">The research reshaped the prompt before it shipped: dismissal language changed from "Dismiss" to "Close"; the opt-out checkbox copy was rewritten to remove the ambiguity that tripped up a fifth of participants; and the benefit statement was made explicit — enabling biometrics was tied directly to fewer SMS checks, not left for members to infer.</p>
+          <p class="mb-6">On Android, the share of logins using biometrics rose from 56.3% to 61.3% over the tracked period — a 4% lift on the previous ten-week high. The trend dipped briefly mid-period, but that was traced to an unrelated MFA login bug rather than the prompt itself, and adoption recovered once it was resolved.</p>
+          <p class="mb-0">The prompt's own interaction data backed this up directly: most members who engaged with it chose "go to settings" over "don't show this again," by a margin of roughly two to one. That interaction spike lined up closely with a jump in the app's device authentication toggle — enable actions on the settings page rose from 18.5% to a peak of 40.8% of settings interactions in the weeks the prompt was live.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="max-w-[1176px] mx-auto px-8 py-24 border-t border-neutral-200">
+      <a href="/work" class="text-xs font-medium tracking-[0.2em] uppercase text-neutral-500 hover:text-neutral-900 transition-colors">
+        ← Back to all work
+      </a>
+    </footer>
+
+    <script>
+      const trigger = document.getElementById('synthesis-trigger');
+      const lightbox = document.getElementById('synthesis-lightbox');
+      const closeBtn = document.getElementById('synthesis-close');
+      const scrollArea = document.getElementById('synthesis-scroll');
+
+      let isDragging = false;
+      let startX = 0;
+      let startY = 0;
+      let startScrollLeft = 0;
+      let startScrollTop = 0;
+
+      scrollArea?.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX;
+        startY = e.pageY;
+        startScrollLeft = scrollArea.scrollLeft;
+        startScrollTop = scrollArea.scrollTop;
+        scrollArea.classList.remove('cursor-grab');
+        scrollArea.classList.add('cursor-grabbing');
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging || !scrollArea) return;
+        e.preventDefault();
+        scrollArea.scrollLeft = startScrollLeft - (e.pageX - startX);
+        scrollArea.scrollTop = startScrollTop - (e.pageY - startY);
+      });
+
+      function stopDragging() {
+        isDragging = false;
+        scrollArea?.classList.remove('cursor-grabbing');
+        scrollArea?.classList.add('cursor-grab');
+      }
+
+      window.addEventListener('mouseup', stopDragging);
+
+      function openLightbox() {
+        lightbox?.classList.remove('hidden');
+        lightbox?.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox?.classList.add('hidden');
+        lightbox?.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      trigger?.addEventListener('click', openLightbox);
+      closeBtn?.addEventListener('click', closeLightbox);
+      lightbox?.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    </script>
+  </body>
+</html>

@@ -24,14 +24,15 @@ import '../../styles/global.css';
 
     <!-- HERO -->
     <header class="max-w-[1176px] mx-auto px-8 pt-16 pb-20">
-      <p class="text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-7">
-        Case Study · 2024
-      </p>
       <h1 class="font-['Instrument_Serif'] text-[64px] leading-[1.05] tracking-tight text-black mb-10" style="max-width: 1080px;">
         BWS —<br />
         <em class="italic">Help Centre Enhancement</em>
       </h1>
       <div class="flex flex-wrap gap-x-16 gap-y-4 text-neutral-900">
+        <div>
+          <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Case Study</span>
+          <span class="block text-sm text-neutral-900">2024</span>
+        </div>
         <div>
           <span class="block text-sm font-medium text-neutral-500 tracking-[0.2em] uppercase mb-1">Role</span>
           <span class="block text-sm text-neutral-900">UI Designer</span>
@@ -47,12 +48,12 @@ import '../../styles/global.css';
       </div>
     </header>
 
-    <!-- HERO IMAGE -->
-    <figure class="max-w-[1176px] mx-auto px-8 mb-20">
+    <!-- HERO IMAGE — full bleed -->
+    <figure class="w-full mb-20">
       <img
         src="/case-studies/bws-help-centre/bws-help-centre-hero.png"
         alt="BWS Help Centre Enhancement"
-        class="max-w-[947px] w-full h-auto"
+        class="w-full h-auto"
       />
     </figure>
 
@@ -81,7 +82,7 @@ import '../../styles/global.css';
     </section>
 
     <!-- THE DILEMMA -->
-    <div class="w-full mb-20" style="background: #F0EFEF; padding: 80px 0;">
+    <div class="w-full mb-20" style="background: #F3F0EC; padding: 80px 0;">
       <div class="max-w-[1176px] mx-auto px-8">
         <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">The dilemma</h2>
         <div class="text-[16px] font-light leading-[36px] text-black max-w-[800px]">
@@ -108,11 +109,24 @@ import '../../styles/global.css';
           <p class="text-[16px] font-light leading-[32px] text-black">Explored the problem space through user journey mapping, task mapping, and assumption mapping to align the team on what we knew and what we needed to learn.</p>
         </div>
       </div>
-      <img
-        src="/case-studies/bws-help-centre/bws-help-centre-workshop.png"
-        alt="Discovery workshop"
-        class="w-full h-auto shadow-md"
-      />
+      <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">Initial kickoff</h3>
+      <button
+        type="button"
+        class="zoom-trigger block w-full cursor-zoom-in group relative"
+        data-zoom-src="/case-studies/bws-help-centre/bws-help-centre-workshop.png"
+        data-zoom-alt="Discovery workshop, enlarged"
+        aria-label="Open discovery workshop image in full size"
+      >
+        <img
+          src="/case-studies/bws-help-centre/bws-help-centre-workshop.png"
+          alt="Discovery workshop"
+          class="w-full h-auto shadow-md"
+        />
+        <span class="absolute bottom-4 right-4 bg-black/70 text-white text-xs font-medium tracking-[0.2em] uppercase px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          Click to zoom
+        </span>
+      </button>
+      <p class="text-xs font-medium text-neutral-400 tracking-[0.2em] uppercase mt-3">Note: click the image to view it in detail.</p>
     </section>
 
     <!-- IDEATION & DESIGN -->
@@ -136,47 +150,87 @@ import '../../styles/global.css';
         <p class="mb-0">To validate the proposed experience, we interviewed 8 participants via Askable, identifying their archetypes as Transactional, Price Focused, and Price Sensitive — the segments making up the most value and volume share.</p>
         <p>Participants had to have purchased from BWS or Dan Murphy's within the last 3 months. We walked them through the current app experience, then asked them to complete 3 tasks using low-fidelity prototypes.</p>
       </div>
+      <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">Prototype</h3>
+      <div class="w-full flex justify-start items-center mb-16">
+        <div class="w-full" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe
+            src="https://www.loom.com/embed/527912fbc48d419f9d3e8407bc61c9c0?autoplay=1&muted=1&hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+            title="BWS Help Centre customer testing prototype walkthrough"
+            frameborder="0"
+            allow="autoplay"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          ></iframe>
+        </div>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         <div>
-          <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">Figma Prototype</h3>
-          <img
-            src="/case-studies/bws-help-centre/bws-help-centre-prototype.png"
-            alt="Figma prototype used in testing"
-            class="w-full h-auto shadow-md"
-          />
-        </div>
-        <div>
           <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">Testing Notes</h3>
-          <img
-            src="/case-studies/bws-help-centre/bws-help-centre-testing-notes.png"
-            alt="Testing notes example"
-            class="w-full h-auto shadow-md"
-          />
+          <button
+            type="button"
+            class="zoom-trigger block w-full cursor-zoom-in group relative"
+            data-zoom-src="/case-studies/bws-help-centre/bws-help-centre-testing-notes.png"
+            data-zoom-alt="Testing notes example, enlarged"
+            aria-label="Open testing notes image in full size"
+          >
+            <img
+              src="/case-studies/bws-help-centre/bws-help-centre-testing-notes.png"
+              alt="Testing notes example"
+              class="w-full h-auto shadow-md"
+            />
+            <span class="absolute bottom-4 right-4 bg-black/70 text-white text-xs font-medium tracking-[0.2em] uppercase px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+              Click to zoom
+            </span>
+          </button>
         </div>
       </div>
       <p class="text-[16px] font-light leading-[36px] text-black max-w-[800px] mb-16">After synthesising the interview notes, the UX Designer played back insights to the squad and wider stakeholders, then handed the low-fi wireframes to me to create the UI designs.</p>
       <div class="flex flex-col gap-16">
         <div>
           <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">Inspiration</h3>
-          <img
-            src="/case-studies/bws-help-centre/bws-help-centre-inspiration.png"
-            alt="Design inspiration"
-            class="w-full h-auto shadow-md"
-          />
+          <button
+            type="button"
+            class="zoom-trigger block w-full cursor-zoom-in group relative"
+            data-zoom-src="/case-studies/bws-help-centre/bws-help-centre-inspiration.png"
+            data-zoom-alt="Design inspiration, enlarged"
+            aria-label="Open design inspiration image in full size"
+          >
+            <img
+              src="/case-studies/bws-help-centre/bws-help-centre-inspiration.png"
+              alt="Design inspiration"
+              class="w-full h-auto shadow-md"
+            />
+            <span class="absolute bottom-4 right-4 bg-black/70 text-white text-xs font-medium tracking-[0.2em] uppercase px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+              Click to zoom
+            </span>
+          </button>
         </div>
         <div>
           <h3 class="text-[16px] font-semibold leading-[36px] text-black mb-4">UI Playground</h3>
-          <img
-            src="/case-studies/bws-help-centre/bws-help-centre-ui-playground.png"
-            alt="UI playground explorations"
-            class="w-full h-auto shadow-md"
-          />
+          <button
+            type="button"
+            class="zoom-trigger block w-full cursor-zoom-in group relative"
+            data-zoom-src="/case-studies/bws-help-centre/bws-help-centre-ui-playground.png"
+            data-zoom-alt="UI playground explorations, enlarged"
+            aria-label="Open UI playground image in full size"
+          >
+            <img
+              src="/case-studies/bws-help-centre/bws-help-centre-ui-playground.png"
+              alt="UI playground explorations"
+              class="w-full h-auto shadow-md"
+            />
+            <span class="absolute bottom-4 right-4 bg-black/70 text-white text-xs font-medium tracking-[0.2em] uppercase px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+              Click to zoom
+            </span>
+          </button>
         </div>
       </div>
     </section>
 
     <!-- THE PIVOT -->
-    <div class="w-full mb-20" style="background: #F0EFEF; padding: 80px 0;">
+    <div class="w-full mb-20" style="background: #F3F0EC; padding: 80px 0;">
       <div class="max-w-[1176px] mx-auto px-8">
         <h2 class="font-['Instrument_Serif'] text-[48px] leading-[1.05] text-black mb-4">Uh oh — time to pivot</h2>
         <div class="text-[16px] font-light leading-[36px] text-black max-w-[800px]">
@@ -217,5 +271,103 @@ import '../../styles/global.css';
       </a>
     </footer>
 
+    <!-- ZOOM LIGHTBOX -->
+    <div
+      id="zoom-lightbox"
+      class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center p-6"
+    >
+      <button
+        type="button"
+        id="zoom-close"
+        aria-label="Close"
+        class="absolute top-6 right-6 text-white text-xs font-medium tracking-[0.2em] uppercase border border-white/40 px-4 py-2 hover:bg-white hover:text-black transition-colors"
+      >
+        Close ✕
+      </button>
+      <div id="zoom-scroll" class="w-full h-full overflow-auto cursor-grab select-none">
+        <img
+          id="zoom-image"
+          src=""
+          alt=""
+          class="max-w-none w-[1800px] mx-auto my-auto pointer-events-none"
+          draggable="false"
+        />
+      </div>
+    </div>
+
+    <script>
+      const triggers = document.querySelectorAll('.zoom-trigger');
+      const lightbox = document.getElementById('zoom-lightbox');
+      const closeBtn = document.getElementById('zoom-close');
+      const scrollArea = document.getElementById('zoom-scroll');
+      const zoomImage = document.getElementById('zoom-image');
+
+      let isDragging = false;
+      let startX = 0;
+      let startY = 0;
+      let startScrollLeft = 0;
+      let startScrollTop = 0;
+
+      scrollArea?.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX;
+        startY = e.pageY;
+        startScrollLeft = scrollArea.scrollLeft;
+        startScrollTop = scrollArea.scrollTop;
+        scrollArea.classList.remove('cursor-grab');
+        scrollArea.classList.add('cursor-grabbing');
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging || !scrollArea) return;
+        e.preventDefault();
+        scrollArea.scrollLeft = startScrollLeft - (e.pageX - startX);
+        scrollArea.scrollTop = startScrollTop - (e.pageY - startY);
+      });
+
+      function stopDragging() {
+        isDragging = false;
+        scrollArea?.classList.remove('cursor-grabbing');
+        scrollArea?.classList.add('cursor-grab');
+      }
+
+      window.addEventListener('mouseup', stopDragging);
+
+      function openLightbox(src, alt) {
+        if (zoomImage instanceof HTMLImageElement) {
+          zoomImage.src = src || '';
+          zoomImage.alt = alt || '';
+        }
+        if (scrollArea) {
+          scrollArea.scrollTop = 0;
+          scrollArea.scrollLeft = 0;
+        }
+        lightbox?.classList.remove('hidden');
+        lightbox?.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox?.classList.add('hidden');
+        lightbox?.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          openLightbox(
+            trigger.getAttribute('data-zoom-src'),
+            trigger.getAttribute('data-zoom-alt')
+          );
+        });
+      });
+      closeBtn?.addEventListener('click', closeLightbox);
+      lightbox?.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    </script>
   </body>
 </html>
